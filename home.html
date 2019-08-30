@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inside The Hacktiv Zoo</title>
+    <script src="https://kit.fontawesome.com/a822615f10.js"></script>
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Do You Remember Them?</h1>
+        </header>
+        <section class="score-panel">
+            <ul class="stars" style="color: gold">
+                <li><i class="fa fa-star"></i></i></li>
+                <li><i class="fa fa-star"></i></i></li>
+                <li><i class="fa fa-star"></i></i></li>
+            </ul>
+            <span class="moves">0</span> <span class="moves1">Move(s)</span>
+            <div class="timer"></div>
+            <div class="restart" onclick=startGame()>
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+        <ul class="collect" id="card-collect">
+            <li class="card" type="cat">
+                <i class="fa fa-cat"></i>
+            </li>
+            <li class="card" type="crow">
+                <i class="fa fa-crow"></i>
+            </li>
+            <li class="card" type="dove">
+                <i class="fa fa-dove"></i>
+            </li>
+            <li class="card" type="fish">
+                <i class="fa fa-fish"></i>
+            </li>
+            <li class="card" type="horse">
+                <i class="fa fa-horse-head"></i>
+            </li>
+            <li class="card" type="spider">
+                <i class="fa fa-spider"></i>
+            </li>
+            <li class="card" type="dog">
+                <i class="fa fa-dog"></i>
+            </li>
+            <li class="card" type="frog">
+                <i class="fa fa-frog"></i>
+            </li>
+            <li class="card" type="cat">
+                <i class="fa fa-cat"></i>
+            </li>
+            <li class="card" type="crow">
+                <i class="fa fa-crow"></i>
+            </li>
+            <li class="card" type="dove">
+                <i class="fa fa-dove"></i>
+            </li>
+            <li class="card" type="fish">
+                <i class="fa fa-fish"></i>
+            </li>
+            <li class="card" type="horse">
+                <i class="fa fa-horse-head"></i>
+            </li>
+            <li class="card" type="spider">
+                <i class="fa fa-spider"></i>
+            </li>
+            <li class="card" type="dog">
+                <i class="fa fa-dog"></i>
+            </li>
+            <li class="card" type="frog">
+                <i class="fa fa-frog"></i>
+            </li>
+        </ul>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>🎉 Yeay 🎉</h2>
+                <a class="close" href=#>x</a>
+                <div class="content1">
+                    <p>Congratulations <span id=nameUser></span>!!!</p>
+                    I know you remember them so well.
+                    <br>
+                    Thank for helping Devita 😄
+                </div>
+                <div class="content2">
+                    <p>You made <span id=finalMove></span> move </p>
+                    <p>in <span id=totalTime> </span></p>
+                    <p>Rating: <span id=starRating></span></p>
+                </div>
+                <button id="replay"onclick="replay()">
+                    Play again 😄
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
